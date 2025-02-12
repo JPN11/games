@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="script" href="game.js">
+    <title>Missile Command</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      canvas {
+        background: #222;
+        display: block;
+      }
+      #info-display {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 18px;
+      }
+      #game-over {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 36px;
+        text-align: center;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="info-display">
+      Score: 0 | Level: 1 | Ammo: Launcher 1: 10 | Launcher 2: 10 | Launcher 3:
+      10
+    </div>
+    <div id="game-over">
+      Game Over!<br />Score: <span id="final-score">0</span><br />Refresh to
+      Play Again
+    </div>
+  </body>
+</html>
+<script type="application/javascript" src="/share.js"></script>
