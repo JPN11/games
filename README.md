@@ -1,4 +1,4 @@
-# games
+# Games
 Simple games with HTML and JavaScript
 
 ## List of Games
